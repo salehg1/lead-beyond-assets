@@ -563,17 +563,6 @@
 #lead-beyond-page .contact-chapter__mark i:nth-child(2) { inset-inline-end: 0px; transform: rotate(90deg); }
 #lead-beyond-page .contact-chapter__mark i:nth-child(3) { bottom: 0px; transform: rotate(-90deg); }
 #lead-beyond-page .contact-chapter__mark i:nth-child(4) { inset-inline-end: 0px; bottom: 0px; transform: rotate(180deg); }
-#lead-beyond-page .brand-footer { background: rgb(255, 255, 255); border-top: 1px solid rgba(10, 61, 82, 0.12); }
-#lead-beyond-page .brand-footer__inner { max-width: 1440px; margin: auto; padding: 42px clamp(28px, 5vw, 72px); display: flex; align-items: center; justify-content: space-between; gap: 34px; }
-#lead-beyond-page .brand-footer__logos { display: flex; align-items: center; gap: 20px; }
-#lead-beyond-page .brand-footer__logos > span { width: 1px; height: 40px; background: rgba(10, 61, 82, 0.16); }
-#lead-beyond-page .brand-footer__sbtl { height: 52px; width: auto; }
-#lead-beyond-page .brand-footer__upm-wrap { overflow: hidden; display: grid; place-items: center; width: 170px !important; height: 58px !important; background: transparent !important; }
-#lead-beyond-page .brand-footer__upm { width: 182px; height: 182px; max-width: none; object-fit: contain; transform: translateY(-60px); }
-#lead-beyond-page .brand-footer__maia { height: 52px; width: auto; padding: 0px; border-radius: 0px; background: transparent !important; }
-#lead-beyond-page .brand-footer__links { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 10px 26px; direction: ltr; }
-#lead-beyond-page .brand-footer__links a { color: rgb(10, 61, 82); text-decoration: none; font: 500 14px / 1.4 Cairo, sans-serif; }
-#lead-beyond-page .brand-footer__links a:hover { color: rgb(0, 107, 94); }
 #lead-beyond-page .checkout-dock { pointer-events: none; left: 50% !important; right: auto !important; opacity: 0 !important; transform: translateX(-50%) translateY(calc(100% + 28px)) !important; transition: opacity 260ms, transform 360ms cubic-bezier(0.2, 0.75, 0.2, 1) !important; }
 #lead-beyond-page .checkout-dock.checkout-dock--visible { pointer-events: auto; opacity: 1 !important; transform: translateX(-50%) !important; }
 @media (max-width: 1080px) {
@@ -582,8 +571,6 @@
   #lead-beyond-page .story-hero > div > div:last-child > div { padding: 24px !important; }
   #lead-beyond-page .contact-chapter__inner { grid-template-columns: 1fr; align-items: start; }
   #lead-beyond-page .contact-chapter__actions { grid-template-columns: 1fr 1fr; min-width: 0px; }
-  #lead-beyond-page .brand-footer__inner { flex-direction: column; align-items: flex-start; }
-  #lead-beyond-page .brand-footer__links { justify-content: flex-start; }
 }
 @media (max-width: 780px) {
   #lead-beyond-page .lb-nav { height: 66px !important; padding-inline: 14px !important; }
@@ -630,14 +617,6 @@
   #lead-beyond-page .contact-chapter__inner { padding: 64px 44px 72px 18px !important; }
   #lead-beyond-page div[dir="ltr"] .contact-chapter__inner { padding: 64px 18px 72px 44px !important; }
   #lead-beyond-page .contact-chapter__actions { grid-template-columns: 1fr; width: 100%; }
-  #lead-beyond-page .brand-footer__inner { padding: 34px 18px 112px; }
-  #lead-beyond-page .brand-footer__logos { width: 100%; gap: 11px; }
-  #lead-beyond-page .brand-footer__sbtl { height: 38px; }
-  #lead-beyond-page .brand-footer__upm-wrap { width: 108px !important; height: 42px !important; }
-  #lead-beyond-page .brand-footer__upm { width: 118px; height: 118px; transform: translateY(-39px); }
-  #lead-beyond-page .brand-footer__maia { height: 37px; }
-  #lead-beyond-page .brand-footer__logos > span { height: 30px; }
-  #lead-beyond-page .brand-footer__links { display: grid; gap: 10px; }
   #lead-beyond-page .checkout-dock { left: 50% !important; right: auto !important; bottom: 12px !important; width: calc(100% - 24px) !important; max-width: none !important; padding: 6px !important; }
   #lead-beyond-page .checkout-dock__value { display: none !important; }
   #lead-beyond-page .checkout-dock__cta { width: 100% !important; min-height: 52px !important; }
@@ -1164,7 +1143,6 @@
 @media (max-width: 780px) {
   #lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { font-size: 12.5px !important; line-height: 1.6 !important; }
   #lead-beyond-page .story-evidence > div > div:last-child > div > div:last-child { font-size: 11px !important; }
-  #lead-beyond-page .brand-footer__links a { display: flex !important; align-items: center !important; min-height: 44px !important; }
   #lead-beyond-page .lb-nav-links button, #lead-beyond-page nav.executive-nav .lb-nav-links button { min-height: 44px !important; padding-block: 10px !important; padding-inline: 14px !important; }
 }
 #lead-beyond-page .lb-nav-links .mobile-nav-toggle, #lead-beyond-page nav.executive-nav .lb-nav-links .mobile-nav-toggle { display: none !important; }
@@ -1269,7 +1247,6 @@
 /* -------------------------------------------------------------------------
    Section palette — pinned to the values the approved design renders.
    ------------------------------------------------------------------------- */
-#lead-beyond-page#lead-beyond-page .brand-footer { background-color: rgb(255, 255, 255) !important; }
 #lead-beyond-page#lead-beyond-page .program-meta { background-color: rgb(10, 61, 82) !important; }
 #lead-beyond-page#lead-beyond-page .story-section { background-color: rgb(255, 255, 255) !important; }
 #lead-beyond-page#lead-beyond-page .story-section.story-about { background-color: rgb(255, 255, 255) !important; }
@@ -1430,4 +1407,328 @@
 #lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) {
   position: relative !important;
   z-index: 2 !important;
+}
+
+
+
+/* =========================================================================
+   Header branding — two-logo lockup, white marks on a navy bar
+
+   The nav now carries the brand navy so the white logo variants read against
+   it; its links, language toggle and CTA are re-coloured to suit. The mobile
+   hamburger already used the light-blue accent, so it is left alone.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page nav.executive-nav {
+  background: rgb(10, 61, 82) !important;
+  border-bottom: 1px solid rgba(116, 208, 240, 0.18) !important;
+  box-shadow: rgba(2, 26, 36, 0.22) 0 8px 28px !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links a:not([data-lb-book]) {
+  color: rgba(255, 255, 255, 0.86) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links a:not([data-lb-book]):hover {
+  color: rgb(255, 255, 255) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links a:not([data-lb-book])::after {
+  background: rgb(116, 208, 240) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links button:not(.mobile-nav-toggle) {
+  color: rgb(255, 255, 255) !important;
+  background: transparent !important;
+  border-color: rgba(255, 255, 255, 0.34) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links button:not(.mobile-nav-toggle):hover {
+  background: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links a[data-lb-book] {
+  background: rgb(116, 208, 240) !important;
+  color: rgb(10, 61, 82) !important;
+  border-color: rgb(116, 208, 240) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .lb-nav-links a[data-lb-book]:hover {
+  background: rgb(150, 220, 244) !important;
+  border-color: rgb(150, 220, 244) !important;
+}
+
+/* The two files carry different transparent padding, so sizing the <img>
+   itself would render the marks at different optical weights. Each sits in a
+   crop window shaped to its own artwork; the image is oversized and offset by
+   the measured padding so the window shows the artwork edge to edge. Both
+   windows share --lb-logo-h, so the two marks stand the same height.
+
+     sbtl_logo_ar.png    613x255, artwork 17,1 -> 595,235  (2.470:1)
+     upm-logo-white.png  237x105, artwork fills the canvas (2.257:1)
+
+   No colour-altering filters: the marks render as authored, full opacity. */
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup {
+  --lb-logo-h: 44px;
+  direction: ltr !important;   /* sbtl left, break, upm right — in both panes */
+  align-items: center !important;
+  gap: 16px !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__upm-wrap,
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap {
+  position: relative !important;
+  display: block !important;
+  overflow: hidden !important;
+  flex: 0 0 auto !important;
+  height: var(--lb-logo-h) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap {
+  width: calc(var(--lb-logo-h) * 2.470) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__upm-wrap {
+  width: calc(var(--lb-logo-h) * 2.257) !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__upm,
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl {
+  position: absolute !important;
+  display: block !important;
+  height: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  filter: none !important;
+  opacity: 1 !important;
+  inset-inline-start: auto !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl {
+  width: 106.06% !important;
+  left: -2.94% !important;
+  top: -0.43% !important;
+}
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__upm {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+/* the small break between the two marks */
+#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup > .dual-brand-lockup__divider {
+  display: block !important;
+  flex: 0 0 1px !important;
+  width: 1px !important;
+  height: calc(var(--lb-logo-h) + 8px) !important;
+  border-radius: 1px !important;
+  background: rgba(255, 255, 255, 0.34) !important;
+}
+@media (max-width: 980px) {
+  #lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-logo-h: 40px; gap: 14px !important; }
+}
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-logo-h: 34px; gap: 12px !important; }
+}
+@media (max-width: 480px) {
+  #lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-logo-h: 30px; gap: 10px !important; }
+  /* the small-screen rule that hides every nav divider would drop the break
+     between the two marks; it is part of the lockup, so keep it */
+  #lead-beyond-page#lead-beyond-page .lb-nav .dual-brand-lockup > .dual-brand-lockup__divider { display: block !important; }
+}
+
+
+/* =========================================================================
+   Hero image
+
+   The hero's watermark <img> now holds the programme photograph. The blue
+   hero sits *behind* it: the section keeps its navy fill and the motion field
+   keeps its original blue glow, and because the photograph is a cutout on a
+   transparent ground, the blue reads straight through it. Nothing is laid
+   over the image.
+
+   Stacking: image z-0, blue glow z-1, copy z-2, chapter label z-3.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-hero > img.story-hero__image {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  object-fit: cover !important;
+  object-position: 35% center !important;
+  opacity: 1 !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page .story-hero > img.story-hero__image { object-position: 32% top !important; }
+}
+/* the blue glow exactly as it was before the photograph was added */
+#lead-beyond-page#lead-beyond-page .story-hero > .hero-motion-field,
+#lead-beyond-page#lead-beyond-page .story-hero.is-pointer-active > .hero-motion-field {
+  background: radial-gradient(560px circle at 72% 30%,
+                              rgba(116, 208, 240, .14), transparent 62%) !important;
+  z-index: 0 !important;
+}
+
+/* The hero's chapter label gets the same treatment as every other rail label
+   (عن البرنامج and the rest): an opaque fill in its own section colour, so it
+   knocks out the rail line behind it, sitting at z-4 above the artwork. It
+   had been pinned to z-0 as a fix for the glow painting over it, which now
+   buried it under the photograph entirely. */
+#lead-beyond-page#lead-beyond-page .story-hero::before {
+  background: transparent !important;
+  color: rgb(116, 208, 240) !important;
+  z-index: 4 !important;
+}
+
+
+/* =========================================================================
+   Stat numbers — no hover movement
+
+   Hovering a stat shifted its number: an 8px lift on the block, a
+   translate/scale on the figure itself, and a padding change on the evidence
+   rows. All three number groups are now inert on hover.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div,
+#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div:hover,
+#lead-beyond-page#lead-beyond-page .story-dark > div > div:last-child > div,
+#lead-beyond-page#lead-beyond-page .story-dark > div > div:last-child > div:hover,
+#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div,
+#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:hover {
+  transform: none !important;
+  padding-inline: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  transition: none !important;
+  cursor: default !important;
+}
+#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div:hover > div,
+#lead-beyond-page#lead-beyond-page .story-dark > div > div:last-child > div:hover > div,
+#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:hover > div {
+  transform: none !important;
+  scale: none !important;
+  transition: none !important;
+}
+
+
+/* =========================================================================
+   End of page — hand off to Salla's native footer
+
+   The custom LEAD BEYOND footer is gone from the markup and its rules are
+   stripped from this stylesheet, so nothing reserves space for it. The
+   closing contact chapter is the last block and carries the final spacing.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-section.story-final.contact-chapter {
+  border-bottom: 0 !important;
+  margin-bottom: 0 !important;
+}
+#lead-beyond-page#lead-beyond-page .story-section.story-final.contact-chapter > .contact-chapter__inner {
+  padding-bottom: clamp(72px, 7vw, 112px) !important;
+}
+#lead-beyond-page#lead-beyond-page { margin-bottom: 0 !important; padding-bottom: 0 !important; }
+
+
+/* =========================================================================
+   Hero stat panel — opaque against the photograph
+
+   The panel was a light glass wash (rgba(0,61,53,.26)) designed to sit on a
+   flat gradient. Over the photograph the faces read straight through it, so
+   it now carries a near-solid navy fill; the blur stays, so the image still
+   reads softly at its edges rather than the panel looking pasted on.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child {
+  background: rgba(7, 44, 60, 0.93) !important;
+  backdrop-filter: blur(18px) saturate(115%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(115%) !important;
+  border-color: rgba(116, 208, 240, 0.3) !important;
+  box-shadow: rgba(2, 20, 28, 0.34) 0 24px 64px !important;
+}
+
+
+/* =========================================================================
+   English lockup — English SBTL mark, mirrored order
+
+   The English pane uses sbtl_logo_en.png and reverses the pair, so it reads
+   UPM on the left and SBTL on the right. The markup order is identical in
+   both panes; only the writing direction of the flex row is flipped.
+
+     sbtl_logo_en.png  613x201, artwork fills the canvas (3.050:1)
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup {
+  direction: rtl !important;
+}
+#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap {
+  width: calc(var(--lb-logo-h) * 3.050) !important;
+}
+#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl {
+  width: 100% !important;
+  left: 0 !important;
+  top: 0 !important;
+}
+
+
+/* =========================================================================
+   Hero chapter label — clear of the rail, no fill
+
+   Other sections knock the rail line out from behind their label with an
+   opaque fill in the section colour. The hero can no longer do that: its
+   backdrop is a photograph over a glow, so no flat colour matches it, and a
+   fill reads as a box. The rail is given a longer break instead, so nothing
+   runs behind the label and the match is exact by construction.
+
+   Original break was 64px..220px; the label centres on 30% of the hero, so
+   the break now runs to 38% and the label sits well inside it.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-hero::after {
+  background: linear-gradient(to bottom,
+                              var(--rail-line) 0 64px,
+                              transparent 64px 38%,
+                              var(--rail-line) 38% 100%) !important;
+}
+#lead-beyond-page#lead-beyond-page .story-hero::before {
+  background: transparent !important;
+  color: rgb(116, 208, 240) !important;
+  z-index: 4 !important;
+}
+
+
+/* =========================================================================
+   Hero copy — legibility over the photograph
+
+   The headline and subhead sit on the same side as the figures in the
+   photograph, so the white type was landing on white thobes. A gradient on
+   the copy container darkens only the copy side and fades out well before
+   the figures, rather than tinting the whole image. It uses the hero's own
+   navy, so no new colour enters the design.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) {
+  background: none !important;
+}
+/* The copy container is capped at 1400px inside a full-bleed hero, so a
+   background painted on it ended in a hard vertical seam either side, and it
+   is a grid container, so a pseudo-layer would resolve against a grid area
+   rather than the hero. The wash therefore gets its own element, spanning the
+   hero edge to edge. It shares z-1 with the photograph and follows it in the
+   markup, so it paints over the image and under the copy (z-2). */
+#lead-beyond-page#lead-beyond-page .story-hero > .story-hero__wash {
+  position: absolute !important;
+  inset: 0 !important;
+  display: block !important;
+  z-index: 1 !important;
+  pointer-events: none !important;
+}
+#lead-beyond-page#lead-beyond-page div[dir="rtl"] .story-hero > .story-hero__wash {
+  background: linear-gradient(to left,
+                              rgba(10, 61, 82, 0.95) 0%,
+                              rgba(10, 61, 82, 0.88) 26%,
+                              rgba(10, 61, 82, 0.5) 46%,
+                              rgba(10, 61, 82, 0.12) 62%,
+                              transparent 74%) !important;
+}
+#lead-beyond-page#lead-beyond-page div[dir="ltr"] .story-hero > .story-hero__wash {
+  background: linear-gradient(to right,
+                              rgba(10, 61, 82, 0.95) 0%,
+                              rgba(10, 61, 82, 0.88) 26%,
+                              rgba(10, 61, 82, 0.5) 46%,
+                              rgba(10, 61, 82, 0.12) 62%,
+                              transparent 74%) !important;
+}
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page div[dir="rtl"] .story-hero > .story-hero__wash,
+  #lead-beyond-page#lead-beyond-page div[dir="ltr"] .story-hero > .story-hero__wash {
+    background: linear-gradient(to bottom,
+                                rgba(10, 61, 82, 0.62) 0%,
+                                rgba(10, 61, 82, 0.82) 42%,
+                                rgba(10, 61, 82, 0.93) 100%) !important;
+  }
 }
