@@ -2207,3 +2207,215 @@
     grid-template-columns: 1fr !important;
   }
 }
+
+
+/* =========================================================================
+   Header lockup — SBTL matched to UPM
+
+   Both marks were pinned to the same box height (--lb-logo-h), but SBTL is a
+   horizontal lockup: mark + wordmark + tagline share that height, so its
+   letterforms read a third smaller than the UPM shield standing beside it.
+   SBTL gets its own height, derived from the same variable so every
+   breakpoint step still carries through.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup {
+  --lb-sbtl-h: calc(var(--lb-upm-h) * 1.12);
+}
+/* SBTL is derived from the UPM height, not from --lb-logo-h: the two
+   variables step at different breakpoints (--lb-logo-h at 980/780/480, UPM at
+   1080/780), so keying off the wrong one made SBTL half again the shield's
+   size on phones. UPM gains the two small-screen steps --lb-logo-h had, so
+   the pair keeps shrinking together down to the narrowest header. */
+@media (max-width: 480px) {
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-upm-h: 26px; }
+}
+@media (max-width: 380px) {
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-upm-h: 22px; }
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap,
+#lead-beyond-page#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap {
+  height: var(--lb-sbtl-h) !important;
+}
+
+
+/* =========================================================================
+   Hero — the proof panel sits on the hero's centre line
+
+   The hero grid was top-loaded: 170px of padding clears the sticky nav but
+   only 68px closed the block, so the panel and the copy beside it rode below
+   the section's optical centre and left an empty band under them. Equalising
+   the closing padding against the nav's own height re-centres the pair, and
+   the panel is centred inside its own column rather than stretched across it.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav + .story-hero > div:not(.hero-motion-field) {
+  padding-bottom: 100px !important;
+  align-items: center !important;
+  justify-items: center !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child {
+  align-self: center !important;
+  justify-self: center !important;
+  margin-inline: auto !important;
+}
+
+
+/* =========================================================================
+   Hero photograph — a step back
+
+   `cover` at 100% blew the cutout past the frame on both axes, cropping the
+   faces at the top. `contain` fits the whole photograph inside the hero, which
+   both uncrops it and reads smaller; it is a transparent cutout, so the navy
+   and the blue glow fill whatever it no longer covers.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > img.story-hero__image {
+  object-fit: contain !important;
+  object-position: 8% bottom !important;
+}
+/* Phones keep `cover`: the hero is portrait there, so `contain` shrinks the
+   cutout to a strip along the bottom edge. */
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > img.story-hero__image {
+    object-fit: cover !important;
+    object-position: 32% bottom !important;
+  }
+}
+
+
+/* =========================================================================
+   Hero proof panel — one centred row beneath the copy
+
+   The panel was a 2x2 card pinned to the hero's second column, which set that
+   column's width and pushed the whole composition off the section's centre.
+   It becomes a single four-cell bar spanning the full content width on its
+   own row under the buttons, centred in the hero: the cells divide with
+   verticals only, and the copy above reclaims the full grid.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav + .story-hero > div:not(.hero-motion-field) {
+  grid-template-columns: minmax(0, 1fr) !important;
+  justify-items: stretch !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child {
+  grid-area: auto !important;
+  grid-column: 1 / -1 !important;
+  grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
+  width: min(100%, 1040px) !important;
+  max-width: none !important;
+  min-height: 0 !important;
+  align-self: center !important;
+  justify-self: center !important;
+  margin: 52px auto 0 !important;
+  border-radius: 18px !important;
+  padding: 6px !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div {
+  padding: 20px 16px !important;
+  border-bottom: 0 !important;
+  border-inline-start: 1px solid rgba(255, 255, 255, .12) !important;
+  text-align: center !important;
+  align-items: center !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:first-child {
+  border-inline-start: 0 !important;
+}
+
+/* Phones keep the two-up card: four cells in a row cannot hold their labels. */
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    width: 100% !important;
+    margin-top: 28px !important;
+    padding: 6px !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div {
+    padding: 16px 11px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, .12) !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:nth-child(2n+1) {
+    border-inline-start: 0 !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:nth-last-child(-n+2) {
+    border-bottom: 0 !important;
+  }
+}
+
+/* With the panel out of the second column the copy inherited the full grid
+   width, which let the paragraph run edge to edge across the photograph. It
+   keeps its old measure and stays on the reading edge (right in Arabic, left
+   in English) via `start`, so both panes hold. */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > :not(:last-child) {
+  justify-self: start !important;
+  max-width: 720px !important;
+}
+
+
+/* =========================================================================
+   Hero proof bar — tightened
+
+   The four-cell bar carried the 2x2 card's proportions: a 1040px span, 20px
+   cell padding and a 34px figure left each cell mostly empty air. It closes
+   up to the reference bar — a narrower span, tighter cells and a figure sized
+   to sit on one line with its label.
+   ========================================================================= */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child {
+  width: min(100%, 1000px) !important;
+  margin-top: 44px !important;
+  padding: 5px !important;
+  border-radius: 18px !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div {
+  min-height: 0 !important;
+  padding: 22px 18px !important;
+  gap: 0 !important;
+  justify-content: center !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child {
+  font-size: 36px !important;
+  line-height: 1.05 !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child {
+  font-size: 14.5px !important;
+  line-height: 1.4 !important;
+  margin-top: 7px !important;
+}
+
+/* The headline now runs two lines by design (it carries its own <br>), so it
+   gets the room to hold them without a third wrap. */
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero h1 {
+  max-width: 100% !important;
+  font-size: clamp(30px, 3.5vw, 52px) !important;
+  line-height: 1.18 !important;
+  text-wrap: balance !important;
+}
+#lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > :not(:last-child) {
+  max-width: 860px !important;
+}
+
+
+/* =========================================================================
+   Phones — the hero reads as one centred column
+   ========================================================================= */
+@media (max-width: 780px) {
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) {
+    justify-items: center !important;
+    text-align: center !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > :not(:last-child) {
+    justify-self: center !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    text-align: center !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:nth-child(4) {
+    justify-items: center !important;
+    justify-content: center !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:nth-child(4) a {
+    justify-content: center !important;
+  }
+  #lead-beyond-page#lead-beyond-page#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div {
+    min-height: 0 !important;
+    padding: 14px 10px !important;
+    align-items: center !important;
+    text-align: center !important;
+  }
+}
