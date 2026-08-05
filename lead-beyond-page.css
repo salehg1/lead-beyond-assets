@@ -461,7 +461,7 @@
 #lead-beyond-page div[dir="ltr"] .story-section > div:not(.hero-motion-field), #lead-beyond-page div[dir="ltr"] .story-faq__inner { padding-left: clamp(92px, 7vw, 128px) !important; }
 #lead-beyond-page .story-hero { min-height: min(800px, -82px + 100svh); display: grid; align-items: stretch; overflow: hidden; background: rgb(10, 61, 82) !important; }
 #lead-beyond-page .story-hero > img { display: none !important; }
-#lead-beyond-page .story-hero > div:not(.hero-motion-field) { width: 100%; display: grid; grid-template-columns: minmax(0px, 1.2fr) minmax(430px, 0.72fr); column-gap: clamp(54px, 6vw, 104px); align-items: center; position: relative; z-index: 2; align-self: stretch; min-height: min(800px, -82px + 100svh); max-width: 1660px !important; padding: clamp(62px, 7vw, 104px) clamp(92px, 7vw, 128px) clamp(56px, 6vw, 88px) clamp(70px, 5vw, 96px) !important; }
+#lead-beyond-page .story-hero > div:not(.hero-motion-field) { width: 100%; display: grid; grid-template-columns: minmax(0px, 1fr); column-gap: clamp(54px, 6vw, 104px); align-content: center; align-items: start; position: relative; z-index: 2; align-self: stretch; min-height: min(800px, -82px + 100svh); max-width: 1660px !important; padding: clamp(62px, 7vw, 104px) clamp(92px, 7vw, 128px) clamp(56px, 6vw, 88px) clamp(70px, 5vw, 96px) !important; }
 #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) { padding-left: clamp(92px, 7vw, 128px) !important; padding-right: clamp(70px, 5vw, 96px) !important; }
 #lead-beyond-page .story-hero > div > div:first-child { grid-column: 1; }
 #lead-beyond-page .story-hero h1 { grid-column: 1; text-wrap: balance; opacity: 0; transform: translateY(34px); clip-path: inset(0px 0px 100%); animation: 950ms cubic-bezier(0.16, 0.8, 0.2, 1) 120ms 1 normal forwards running lb-heroHeadlineIn; max-width: 880px !important; font-size: clamp(48px, 5.2vw, 90px) !important; line-height: 1.07 !important; color: rgb(255, 255, 255) !important; margin-top: 0px !important; }
@@ -469,12 +469,13 @@
 #lead-beyond-page .story-hero > div > div[style*="display:flex"][style*="margin-top:42px"] { grid-column: 1; margin-top: 34px !important; }
 #lead-beyond-page .story-hero > div > div[style*="display:flex"][style*="margin-top:42px"] a:first-child { background: rgb(116, 208, 240) !important; color: rgb(10, 61, 82) !important; box-shadow: none !important; border: 1px solid rgb(116, 208, 240) !important; }
 #lead-beyond-page .story-hero > div > div[style*="display:flex"][style*="margin-top:42px"] a:last-child { background: transparent !important; color: rgb(255, 255, 255) !important; border-color: rgba(255, 255, 255, 0.45) !important; }
-#lead-beyond-page .story-hero > div > div:last-child { grid-area: 1 / 2 / span 5; align-self: center; background: rgba(0, 61, 53, 0.26); backdrop-filter: blur(12px); overflow: hidden; box-shadow: rgba(0, 0, 0, 0.14) 0px 24px 64px; display: grid !important; grid-template-columns: 1fr 1fr !important; gap: 0px !important; margin: 0px !important; padding: 0px !important; border: 1px solid rgba(116, 208, 240, 0.25) !important; border-radius: 14px !important; }
-#lead-beyond-page .story-hero > div > div:last-child > div { min-height: 170px; display: grid; grid-template-columns: minmax(82px, auto) 1fr; align-items: center; gap: 18px; transform: translateY(18px); opacity: 0; animation: 700ms cubic-bezier(0.2, 0.75, 0.2, 1) 0s 1 normal forwards running lb-heroStatIn; min-width: 0px !important; padding: clamp(22px, 2.3vw, 34px) !important; border: 0px !important; border-inline-start: 1px solid rgba(116, 208, 240, 0.16) !important; border-block-end: 1px solid rgba(116, 208, 240, 0.16) !important; }
+#lead-beyond-page .story-hero > div > div:last-child { grid-column: 1; grid-row: auto; align-self: start; width: 100%; max-width: 940px; min-height: 0; background: rgba(0, 61, 53, 0.26); backdrop-filter: blur(12px); overflow: hidden; box-shadow: rgba(0, 0, 0, 0.14) 0px 24px 64px; display: grid !important; grid-template-columns: repeat(4, minmax(0px, 1fr)) !important; gap: 0px !important; margin: clamp(28px, 3vw, 40px) 0px 0px !important; padding: 0px !important; border: 1px solid rgba(116, 208, 240, 0.25) !important; border-radius: 14px !important; }
+#lead-beyond-page .story-hero > div > div:last-child > div { min-height: 0px; display: grid; grid-template-rows: auto auto; align-content: center; gap: 6px; transform: translateY(18px); opacity: 0; animation: 700ms cubic-bezier(0.2, 0.75, 0.2, 1) 0s 1 normal forwards running lb-heroStatIn; min-width: 0px !important; padding: clamp(14px, 1.35vw, 20px) clamp(12px, 1.5vw, 22px) !important; border: 0px !important; border-inline-start: 1px solid rgba(116, 208, 240, 0.16) !important; }
+#lead-beyond-page .story-hero > div > div:last-child > div:first-child { border-inline-start: 0px !important; }
 #lead-beyond-page .story-hero > div > div:last-child > div:nth-child(2) { animation-delay: 100ms; }
 #lead-beyond-page .story-hero > div > div:last-child > div:nth-child(3) { animation-delay: 200ms; }
 #lead-beyond-page .story-hero > div > div:last-child > div:nth-child(4) { animation-delay: 300ms; }
-#lead-beyond-page .story-hero > div > div:last-child > div > div:first-child { direction: ltr; unicode-bidi: isolate; white-space: nowrap; color: rgb(116, 208, 240) !important; font-size: clamp(38px, 4vw, 62px) !important; line-height: 0.95 !important; font-weight: 700 !important; text-align: right !important; }
+#lead-beyond-page .story-hero > div > div:last-child > div > div:first-child { direction: ltr; unicode-bidi: isolate; white-space: nowrap; color: rgb(116, 208, 240) !important; font-size: clamp(28px, 2.4vw, 38px) !important; line-height: 1 !important; font-weight: 700 !important; text-align: right !important; }
 #lead-beyond-page .story-hero > div > div:last-child > div > div:last-child { margin: 0px !important; color: rgb(255, 255, 255) !important; font-size: clamp(13px, 1.1vw, 16px) !important; line-height: 1.55 !important; text-align: right !important; }
 @keyframes lb-heroStatIn { 
   100% { transform: none; opacity: 1; }
@@ -567,8 +568,10 @@
 #lead-beyond-page .checkout-dock.checkout-dock--visible { pointer-events: auto; opacity: 1 !important; transform: translateX(-50%) !important; }
 @media (max-width: 1080px) {
   #lead-beyond-page .nav-brand-lockup .nav-brand-lockup__upm-wrap { width: 112px !important; flex-basis: 112px; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) { grid-template-columns: 1fr minmax(310px, 0.7fr); column-gap: 36px; }
+  #lead-beyond-page .story-hero > div > div:last-child { grid-template-columns: repeat(2, minmax(0px, 1fr)) !important; }
   #lead-beyond-page .story-hero > div > div:last-child > div { padding: 24px !important; }
+  #lead-beyond-page .story-hero > div > div:last-child > div:nth-child(2n+1) { border-inline-start: 0px !important; }
+  #lead-beyond-page .story-hero > div > div:last-child > div:nth-child(-n+2) { border-block-end: 1px solid rgba(116, 208, 240, 0.16) !important; }
   #lead-beyond-page .contact-chapter__inner { grid-template-columns: 1fr; align-items: start; }
   #lead-beyond-page .contact-chapter__actions { grid-template-columns: 1fr 1fr; min-width: 0px; }
 }
@@ -622,7 +625,7 @@
   #lead-beyond-page .checkout-dock__cta { width: 100% !important; min-height: 52px !important; }
 }
 #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child { overflow: hidden !important; background: rgba(0, 61, 53, 0.32) !important; border-color: rgba(116, 208, 240, 0.28) !important; }
-#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 184px !important; padding: clamp(24px, 2.5vw, 36px) !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; justify-content: space-between !important; gap: 28px !important; overflow: hidden !important; transition: background-color 260ms !important; }
+#lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: clamp(14px, 1.35vw, 20px) clamp(12px, 1.5vw, 22px) !important; display: flex !important; flex-direction: column !important; align-items: stretch !important; justify-content: center !important; gap: 6px !important; overflow: hidden !important; transition: background-color 260ms !important; }
 #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:hover { transform: none !important; background: rgba(116, 208, 240, 0.075) !important; }
 #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { width: 100% !important; align-self: stretch !important; text-align: right !important; }
 #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { width: 100% !important; max-width: 158px !important; align-self: flex-start !important; margin-top: auto !important; text-align: left !important; }
@@ -683,9 +686,11 @@
 }
 @media (max-width: 780px) {
   #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child { grid-template-columns: repeat(2, minmax(0px, 1fr)) !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 148px !important; padding: 18px 15px !important; gap: 20px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 34px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { max-width: 124px !important; font-size: 11px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: 14px 12px !important; gap: 5px !important; border-inline-start: 1px solid rgba(116, 208, 240, 0.16) !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:nth-child(2n+1) { border-inline-start: 0px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div:nth-child(-n+2) { border-block-end: 1px solid rgba(116, 208, 240, 0.16) !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 26px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { max-width: 150px !important; font-size: 11px !important; }
   #lead-beyond-page .journey-interaction-hint { font-size: 14px !important; align-items: flex-start !important; }
   #lead-beyond-page .journey-interaction-hint::before { margin-top: 11px; width: 32px !important; flex-basis: 32px !important; }
   #lead-beyond-page .story-dark > div > div:last-child { grid-template-columns: 1fr !important; }
@@ -741,8 +746,8 @@
   #lead-beyond-page .story-hero > div:not(.hero-motion-field) { padding-top: 42px !important; padding-bottom: 38px !important; }
   #lead-beyond-page .story-hero h1 { font-size: clamp(36px, 10vw, 44px) !important; line-height: 1.18 !important; }
   #lead-beyond-page .story-hero p { margin-top: 14px !important; line-height: 1.7 !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 132px !important; padding: 16px 14px !important; gap: 14px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 32px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: 13px 11px !important; gap: 5px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 26px !important; }
   #lead-beyond-page .program-meta > div > div { display: grid !important; grid-template-columns: repeat(2, minmax(0px, 1fr)) !important; gap: 0px !important; }
   #lead-beyond-page .program-meta > div > div > div { border-inline-start: 1px solid rgba(255, 255, 255, 0.12); border-bottom: 1px solid rgba(255, 255, 255, 0.12); min-width: 0px !important; min-height: 96px !important; padding: 18px 14px !important; }
   #lead-beyond-page .story-about > div { padding-top: 32px !important; padding-bottom: 34px !important; }
@@ -894,9 +899,9 @@
   #lead-beyond-page div[dir="ltr"] .story-section > div:not(.hero-motion-field), #lead-beyond-page div[dir="ltr"] .story-faq__inner { padding-left: 76px !important; padding-right: 16px !important; }
   #lead-beyond-page .story-hero > div:not(.hero-motion-field) { padding-top: 42px !important; padding-bottom: 38px !important; }
   #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child { margin-top: 28px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 122px !important; padding: 16px 14px !important; gap: 14px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 32px !important; }
-  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { max-width: 118px !important; font-size: 11.5px !important; line-height: 1.65 !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: 13px 10px !important; gap: 5px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { font-size: 26px !important; }
+  #lead-beyond-page .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { max-width: 150px !important; font-size: 11.5px !important; line-height: 1.5 !important; }
   #lead-beyond-page .story-evidence > div { padding-top: 36px !important; padding-bottom: 38px !important; }
   #lead-beyond-page .story-evidence > div > h2 { font-size: 27px !important; line-height: 1.48 !important; }
   #lead-beyond-page .story-evidence > div > div:last-child { margin-top: 20px !important; }
@@ -1137,7 +1142,7 @@
   #lead-beyond-page nav.executive-nav + .story-hero > div:not(.hero-motion-field) { padding-top: 136px !important; }
   #lead-beyond-page section[id] { scroll-margin-top: 78px !important; }
 }
-#lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 10px !important; text-align: center !important; }
+#lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div { display: flex !important; flex-direction: column !important; align-items: center !important; justify-content: center !important; gap: 6px !important; text-align: center !important; }
 #lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:first-child { width: 100% !important; align-self: center !important; text-align: center !important; }
 #lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div > div:last-child { width: 100% !important; max-width: none !important; align-self: center !important; margin-top: 0px !important; text-align: center !important; }
 @media (max-width: 780px) {
@@ -1193,7 +1198,7 @@
   #lead-beyond-page .story-section > div, #lead-beyond-page .story-faq__inner { padding-block: 34px !important; }
   #lead-beyond-page .story-section > div > h2 { margin-bottom: 16px !important; }
   #lead-beyond-page .story-dark > div > div:last-child > div { min-height: 0px !important; padding: 16px 0px !important; gap: 14px !important; }
-  #lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: 16px 12px !important; gap: 6px !important; }
+  #lead-beyond-page div[dir="rtl"] .story-hero > div:not(.hero-motion-field) > div:last-child > div, #lead-beyond-page div[dir="ltr"] .story-hero > div:not(.hero-motion-field) > div:last-child > div { min-height: 0px !important; padding: 13px 10px !important; gap: 5px !important; }
   #lead-beyond-page .story-evidence > div > div:last-child > div { min-height: 0px !important; padding: 18px !important; }
   #lead-beyond-page .mobile-nav-toggle .mobile-nav-toggle__icon { place-items: center; width: 22px; height: 22px; color: rgb(150, 220, 244); display: grid !important; }
   #lead-beyond-page .mobile-nav-toggle .mobile-nav-toggle__icon svg { display: block; width: 22px; height: 22px; }
@@ -1751,459 +1756,5 @@
                                 rgba(10, 61, 82, 0.62) 0%,
                                 rgba(10, 61, 82, 0.82) 42%,
                                 rgba(10, 61, 82, 0.93) 100%) !important;
-  }
-}
-
-/* =========================================================================
-   SBTL nav mark — recalibration for sbtl-logo-white.png
-   The earlier crop-window values (wrap width ratio + img width/left/top)
-   were tuned for the old sbtl_logo_ar/en PNGs, which carried different
-   transparent padding. This file is cropped tight, so it can simply be
-   sized by height and allowed to set its own width.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap,
-#lead-beyond-page#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl-wrap {
-  width: auto !important;
-  height: var(--lb-logo-h) !important;
-  overflow: visible !important;
-  flex: 0 0 auto !important;
-}
-#lead-beyond-page#lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl,
-#lead-beyond-page#lead-beyond-page#lead-beyond-page div[dir="ltr"] nav.executive-nav .dual-brand-lockup .dual-brand-lockup__sbtl {
-  position: static !important;
-  inset: auto !important;
-  left: auto !important;
-  top: auto !important;
-  height: 100% !important;
-  width: auto !important;
-  max-width: none !important;
-  object-fit: contain !important;
-  filter: none !important;
-  opacity: 1 !important;
-}
-
-
-/* =========================================================================
-   "لماذا الآن" (evidence) rows — close the dead space
-
-   Each row holds four blocks (figure, headline, body, source) but the grid
-   only declared three columns, so the fourth wrapped onto an implicit second
-   row: the body was squeezed into the narrow source column while most of the
-   row sat empty, and the row grew to ~300px tall to hold the overflow.
-
-   The row is now two columns — the figure beside a single stacked text
-   column — so every child has a declared place and the block reads as one
-   tight unit with no orphaned row underneath.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div {
-  grid-template-columns: minmax(110px, 190px) minmax(0, 1fr) !important;
-  grid-auto-rows: min-content !important;
-  align-items: start !important;
-  align-content: center !important;
-  gap: 6px clamp(24px, 3vw, 52px) !important;
-  min-height: 0 !important;
-  padding: clamp(26px, 2.4vw, 34px) 0 !important;
-}
-/* Figure: spans the full text stack and stays optically aligned to its
-   headline rather than floating in the middle of the row. */
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:first-child {
-  grid-column: 1 !important;
-  grid-row: 1 / -1 !important;
-  align-self: start !important;
-  margin-top: -0.12em !important;
-}
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(2),
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(3),
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:last-child {
-  grid-column: 2 !important;
-  max-width: 74ch !important;
-}
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(2) {
-  font-size: clamp(18px, 1.35vw, 21px) !important;
-  font-weight: 700 !important;
-  line-height: 1.45 !important;
-}
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(3) {
-  margin-top: 6px !important;
-  font-size: clamp(16px, 1.15vw, 18px) !important;
-  line-height: 1.65 !important;
-  color: rgb(110, 111, 114) !important;
-}
-#lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:last-child {
-  margin-top: 10px !important;
-  font-size: 12px !important;
-  line-height: 1.5 !important;
-  color: rgb(148, 149, 152) !important;
-}
-/* The section's own frame was carrying a 158-190px inline start pad for the
-   rail plus 66/72px block padding, which read as a wide empty gutter once the
-   rows tightened. */
-#lead-beyond-page#lead-beyond-page .story-evidence > div {
-  padding-inline: clamp(84px, 7vw, 128px) clamp(40px, 4vw, 72px) !important;
-  padding-block: clamp(56px, 5vw, 78px) !important;
-}
-#lead-beyond-page#lead-beyond-page .story-evidence > div > p {
-  margin-top: 20px !important;
-}
-@media (max-width: 780px) {
-  #lead-beyond-page#lead-beyond-page .story-evidence > div {
-    padding-inline: 44px 20px !important;
-  }
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div {
-    grid-template-columns: 1fr !important;
-    gap: 4px !important;
-    padding: 20px 0 !important;
-  }
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:first-child {
-    grid-row: auto !important;
-    margin-top: 0 !important;
-  }
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(2),
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:nth-child(3),
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > div > div:last-child {
-    grid-column: auto !important;
-  }
-}
-
-
-/* =========================================================================
-   Journey cards — the stage is the card
-
-   The front now leads with the stage name (المرآة / العدسة / الانطلاق) with
-   the day and its leadership level as the kicker above it, and the back
-   labels its list as المخرجات so the three deck outcomes per day read as
-   deliverables rather than loose bullets.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page .journey-card__day {
-  display: block;
-  line-height: 1.45 !important;
-  letter-spacing: 0.02em !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__front h3 {
-  letter-spacing: 0.02em !important;
-  margin: auto 0 14px !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__outcomes-label {
-  margin: 0 0 10px !important;
-  font-size: 13px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.06em !important;
-  color: rgb(116, 208, 240) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__back > div:last-child {
-  gap: 10px !important;
-}
-@media (max-width: 780px) {
-  #lead-beyond-page#lead-beyond-page .journey-card__outcomes-label {
-    margin-bottom: 8px !important;
-    font-size: 12px !important;
-  }
-}
-/* The back now carries an extra label plus the fuller stage line, so the
-   card needs the height to hold it without clipping the last outcome. */
-
-
-
-/* =========================================================================
-   Journey cards — the outcome strip
-
-   Each card states the three المخرجات points from the deck and closes with
-   the day's result line (the p.7-9 theme) as its own strip, so the payoff is
-   not buried inside the descriptive sentence.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page .journey-card__result {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: baseline !important;
-  gap: 4px 10px !important;
-  margin-top: 18px !important;
-  padding-top: 14px !important;
-  border-top: 1px solid rgba(10, 61, 82, 0.12) !important;
-  font-size: 16px !important;
-  font-weight: 700 !important;
-  line-height: 1.45 !important;
-  color: rgb(10, 61, 82) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__result > span {
-  flex: 0 0 auto !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.06em !important;
-  color: rgb(116, 208, 240) !important;
-}
-/* The outcomes list is no longer the back's last child, so the rules that
-   sized it by position are re-aimed at its new place in the order. */
-
-
-
-
-/* =========================================================================
-   Phone and tablet — nothing is reached by swiping sideways
-
-   Nine card rows were built as scroll-snap tracks below the desktop
-   breakpoint: the journey stage, its framework row, the skills grid, the
-   method steps, the dates, the outcomes, the team and the pricing columns.
-   Each hid most of its cards past the inline edge behind a horizontal
-   gesture the page never announces, and the script that unpacked them into a
-   column only ran at 600px and below — so every tablet width kept the tracks
-   and a phone with JS blocked kept them too.
-
-   They are wrapping grids in CSS now, at every width up to 1024px and with
-   no JavaScript involved: auto-fit resolves to one column on phones and two
-   on tablets, and no row can scroll sideways.
-   ========================================================================= */
-@media (max-width: 1024px) {
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child,
-  #lead-beyond-page#lead-beyond-page .story-journey .journey-flip-stage,
-  #lead-beyond-page#lead-beyond-page .story-journey > div > div:last-child,
-  #lead-beyond-page#lead-beyond-page #lb-skills-ar > div > div:last-child,
-  #lead-beyond-page#lead-beyond-page #lb-skills-en > div > div:last-child,
-  #lead-beyond-page#lead-beyond-page .story-method > div > div:last-child,
-  #lead-beyond-page#lead-beyond-page .story-dates > div > div:nth-child(3),
-  #lead-beyond-page#lead-beyond-page .story-outcomes > div > div:nth-child(3),
-  #lead-beyond-page#lead-beyond-page .story-team > div > div:nth-child(4),
-  #lead-beyond-page#lead-beyond-page .story-pricing > div > div:last-child {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 42vw, 300px), 1fr)) !important;
-    align-items: stretch !important;
-    gap: 14px !important;
-    overflow: visible !important;
-    scroll-snap-type: none !important;
-    overscroll-behavior-inline: auto !important;
-    padding-inline: 0 !important;
-    padding-bottom: 0 !important;
-  }
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child > *,
-  #lead-beyond-page#lead-beyond-page .story-journey .journey-flip-stage > *,
-  #lead-beyond-page#lead-beyond-page .story-journey > div > div:last-child > *,
-  #lead-beyond-page#lead-beyond-page #lb-skills-ar > div > div:last-child > *,
-  #lead-beyond-page#lead-beyond-page #lb-skills-en > div > div:last-child > *,
-  #lead-beyond-page#lead-beyond-page .story-method > div > div:last-child > *,
-  #lead-beyond-page#lead-beyond-page .story-dates > div > div:nth-child(3) > *,
-  #lead-beyond-page#lead-beyond-page .story-outcomes > div > div:nth-child(3) > *,
-  #lead-beyond-page#lead-beyond-page .story-team > div > div:nth-child(4) > *,
-  #lead-beyond-page#lead-beyond-page .story-pricing > div > div:last-child > * {
-    flex: 0 0 auto !important;
-    width: auto !important;
-    min-width: 0 !important;
-    max-width: none !important;
-    scroll-snap-align: none !important;
-  }
-  /* The evidence rows are figure-beside-text lines, not cards, so they stay a
-     single column and keep the internal layout set further up. */
-  #lead-beyond-page#lead-beyond-page .story-evidence > div > div:last-child {
-    grid-template-columns: 1fr !important;
-    gap: 0 !important;
-  }
-  /* Pricing is a two-panel block; the panels read better stacked full width
-     than as two narrow columns. */
-  #lead-beyond-page#lead-beyond-page .story-pricing > div > div:last-child {
-    grid-template-columns: 1fr !important;
-    gap: 20px !important;
-  }
-}
-
-
-
-
-/* =========================================================================
-   Registration status — the label may wrap
-
-   "التسجيل مفتوح" sat in a nowrap flex row beside its status dot: the cell
-   is 147px wide at phone widths while the row wanted 163px, so the label
-   pushed past the cell edge. It wraps under the dot instead.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page .registration-status {
-  flex-wrap: wrap !important;
-  min-width: 0 !important;
-}
-#lead-beyond-page#lead-beyond-page .registration-status__dot {
-  flex: 0 0 auto !important;
-}
-
-
-/* =========================================================================
-   Narrow phones (≤ 360px) — the pieces that still ran past the edge
-
-   Three blocks were sized for 375px and over, and each pushed past its box
-   on a 320px screen: the nav lockup (215px of logo pair against 308px of
-   usable nav), the program-meta cells, and the price figure.
-   ========================================================================= */
-@media (max-width: 360px) {
-  /* The dual lockup is the widest fixed object on the page. Its logos are
-     sized off --lb-logo-h, so one variable brings the pair down. */
-  #lead-beyond-page#lead-beyond-page nav.executive-nav .dual-brand-lockup { --lb-logo-h: 23px; gap: 7px !important; }
-  #lead-beyond-page#lead-beyond-page .lb-nav { padding-inline: 4px !important; }
-}
-
-/* Programme facts — a clean two-up on phones
-   Four equal cells with 36px inline padding and 20px values could not fit
-   their own text at phone widths ("التسجيل مفتوح" wanted 163px in a 120px
-   cell). They become a two-column grid with the dividers dropped and the
-   type stepped down, which also reads as a tidier block than four rules. */
-@media (max-width: 600px) {
-  #lead-beyond-page#lead-beyond-page .program-meta > div > div {
-    display: grid !important;
-    grid-template-columns: 1fr 1fr !important;
-    gap: 2px 16px !important;
-  }
-  #lead-beyond-page#lead-beyond-page .program-meta > div > div > div {
-    flex: 0 0 auto !important;
-    min-width: 0 !important;
-    padding: 14px 0 !important;
-    padding-inline-start: 0 !important;
-    border-inline-start: 0 !important;
-  }
-  #lead-beyond-page#lead-beyond-page .program-meta > div > div > div > div:first-child {
-    font-size: 12px !important;
-    margin-bottom: 4px !important;
-  }
-  #lead-beyond-page#lead-beyond-page .program-meta > div > div > div > div:last-child {
-    font-size: 14px !important;
-    line-height: 1.45 !important;
-    overflow-wrap: anywhere !important;
-  }
-}
-
-/* The price figure — wraps rather than overhangs
-   "SAR 4,500" at 30px + 72px is wider than a 320px card interior. */
-@media (max-width: 600px) {
-  #lead-beyond-page#lead-beyond-page .pricing-offer {
-    padding: 34px 24px !important;
-  }
-  #lead-beyond-page#lead-beyond-page .pricing-offer span[style*="font-size: 72px"] {
-    font-size: clamp(46px, 15vw, 62px) !important;
-  }
-  #lead-beyond-page#lead-beyond-page .pricing-offer span[style*="font-size: 30px"] {
-    font-size: clamp(20px, 6vw, 26px) !important;
-  }
-  #lead-beyond-page#lead-beyond-page .pricing-offer > div > div[style*="display: flex"] {
-    flex-wrap: wrap !important;
-    gap: 4px 10px !important;
-  }
-  /* The two-column "included" list is a single column on a phone. */
-  #lead-beyond-page#lead-beyond-page .pricing-includes > div[style*="grid-template-columns"] {
-    grid-template-columns: 1fr !important;
-    gap: 14px !important;
-  }
-}
-
-
-
-
-/* =========================================================================
-   Journey cards — the flip, carrying both lists from pages 7-9
-
-   The card keeps its original behaviour: a stage face that turns to reveal
-   the detail on hover, click, or Enter/Space. The detail face now holds both
-   lists from the programme file — "مسار التطوير القيادي يشمل" with its three
-   points, then المخرجات, each outcome condensed to a single line so the pair
-   fits a face without scrolling.
-
-   Flip faces are absolutely positioned, so the card's height is fixed and
-   has to clear the taller of the two panes' content at each width. The
-   values below are measured, not guessed: Arabic and English were both
-   checked from 320px up, and the card is sized to the worst case.
-   ========================================================================= */
-#lead-beyond-page#lead-beyond-page .journey-card__back {
-  display: flex !important;
-  flex-direction: column !important;
-  background: rgb(255, 255, 255) !important;
-  padding: clamp(20px, 1.9vw, 28px) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__kicker {
-  display: flex !important;
-  flex-wrap: wrap !important;
-  align-items: baseline !important;
-  gap: 3px 10px !important;
-  font-size: 14px !important;
-  font-weight: 600 !important;
-  letter-spacing: 0.04em !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__kicker > span:first-child { color: rgb(148, 149, 152) !important; }
-#lead-beyond-page#lead-beyond-page .journey-card__kicker > span + span    { color: rgb(116, 208, 240) !important; }
-#lead-beyond-page#lead-beyond-page .journey-card__back h3 {
-  margin: 7px 0 0 !important;
-  font-size: clamp(19px, 1.65vw, 23px) !important;
-  font-weight: 700 !important;
-  line-height: 1.3 !important;
-  color: rgb(10, 61, 82) !important;
-}
-/* The day's headline result, given the weight it carries in the deck. */
-#lead-beyond-page#lead-beyond-page .journey-card__lead {
-  margin: 6px 0 0 !important;
-  font-size: clamp(14px, 1.15vw, 15px) !important;
-  font-weight: 700 !important;
-  line-height: 1.4 !important;
-  color: rgb(26, 109, 143) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__label {
-  margin: 12px 0 8px !important;
-  padding-top: 10px !important;
-  border-top: 1px solid rgba(10, 61, 82, 0.12) !important;
-  font-size: 12px !important;
-  font-weight: 700 !important;
-  letter-spacing: 0.05em !important;
-  color: rgb(116, 208, 240) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__list {
-  display: flex !important;
-  flex-direction: column !important;
-  gap: 6px !important;
-  font-size: clamp(13.5px, 1.05vw, 15px) !important;
-  line-height: 1.45 !important;
-  color: rgb(10, 61, 82) !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__list--outcomes {
-  margin-bottom: auto !important;
-  color: rgb(110, 111, 114) !important;
-}
-/* The stage face: the stage name reads as the kicker, the leadership level
-   as the card's name. */
-#lead-beyond-page#lead-beyond-page .journey-card__day {
-  display: block !important;
-  line-height: 1.45 !important;
-  letter-spacing: 0.02em !important;
-}
-#lead-beyond-page#lead-beyond-page .journey-card__front h3 {
-  letter-spacing: 0.01em !important;
-  margin: auto 0 14px !important;
-}
-
-/* The stage is a wrapping grid at every width — three across on desktop, two
-   on tablets, one on phones — so no row scrolls sideways. */
-#lead-beyond-page#lead-beyond-page .story-journey .journey-flip-stage {
-  display: grid !important;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(260px, 30vw, 340px), 1fr)) !important;
-  align-items: stretch !important;
-  gap: clamp(14px, 1.6vw, 24px) !important;
-  overflow: visible !important;
-  scroll-snap-type: none !important;
-  padding: 0 !important;
-}
-#lead-beyond-page#lead-beyond-page .story-journey .journey-flip-stage > * {
-  flex: 0 0 auto !important;
-  width: auto !important;
-  min-width: 0 !important;
-  max-width: none !important;
-}
-
-/* Earlier rules pinned both faces to a fixed 300px/320px below 900px, sized
-   for the two-bullet card this replaces. The faces follow the card again. */
-#lead-beyond-page#lead-beyond-page .journey-card__face {
-  height: 100% !important;
-  min-height: 0 !important;
-}
-/* Measured card heights. The English pane runs longer than the Arabic at
-   every width, so it sets the floor. */
-#lead-beyond-page#lead-beyond-page .journey-flip-card { min-height: 460px !important; }
-@media (max-width: 1024px) { #lead-beyond-page#lead-beyond-page .journey-flip-card { min-height: 440px !important; } }
-@media (max-width: 600px)  { #lead-beyond-page#lead-beyond-page .journey-flip-card { min-height: 445px !important; } }
-@media (max-width: 380px)  { #lead-beyond-page#lead-beyond-page .journey-flip-card { min-height: 525px !important; } }
-
-/* One column on phones, so a card is never narrower than its content. */
-@media (max-width: 600px) {
-  #lead-beyond-page#lead-beyond-page .story-journey .journey-flip-stage {
-    grid-template-columns: 1fr !important;
   }
 }
